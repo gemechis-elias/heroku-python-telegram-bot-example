@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
-mode = os.getenv("prod")
+mode = os.getenv("dev")
 TOKEN = os.getenv("1163570458:AAHj8veyarGACbClMoIeu21sig5xg3RgzlI")
 if mode == "dev":
     def run(updater):
