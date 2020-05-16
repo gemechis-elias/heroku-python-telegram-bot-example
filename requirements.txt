@@ -35,7 +35,7 @@ logger
 tldextract
 virustotal-api
 pyaxmlparser
-telepot
+python-telegram-bot
 hurry.filesize 
 pget 
 telethon
