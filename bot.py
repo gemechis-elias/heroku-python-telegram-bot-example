@@ -10,14 +10,14 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger()
 
 mode = os.getenv("MODE")
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("1163570458:AAHj8veyarGACbClMoIeu21sig5xg3RgzlI")
 if mode == "dev":
     def run(updater):
         updater.start_polling()
 elif mode == "prod":
     def run(updater):
         PORT = int(os.environ.get("PORT", "8443"))
-        HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
+        HEROKU_APP_NAME = os.environ.get("engtoamhbot")
         updater.start_webhook(listen="0.0.0.0",
                               port=PORT,
                               url_path=TOKEN)
